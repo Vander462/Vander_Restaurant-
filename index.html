@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url('BG.jpg') no-repeat left top fixed;
+            background-size: cover;
+            height: 60vh; /* Adjusted height */
+            position: relative;
+            color:#ffffff; /* Light text color */
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .navbar {
+            background: linear-gradient(90deg, #0a0f24, #2a2f4a);
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: #ffffff; /* Light text color */
+            margin-top: 100px;
+            padding: 20px;
+            background: rgba(10, 15, 36, 0.8);
+            border-radius: 10px;
+        }
+        .btn {
+            background: linear-gradient(45deg, #ffc107, #ff9800);
+            border: none;
+            color: #000;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            transition: all 0.3s ease-in-out;
+            background: linear-gradient(45deg, #ff9800, #ffc107);
+        }
+        .map {
+            margin-top: 20px;
+            border: 0;
+            width: 80%;
+            height: 300px;
+        }
+        .location, .history, .values, .specialties, .team {
+            margin-top: 50px;
+            text-align: center;
+            color: #ffffff;
+            background: rgba(10, 15, 36, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .team img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 10px;
+            border: 2px solid #ffc107; /* Light border */
+        }
+        .family-photo {
+            margin-top: 55px;
+            text-align: center;
+        }
+        .family-photo img {
+            width: 25%; /* Adjusted width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 30px;
+            border: 2px solid #ffc107; /* Light border */
+        }
+        h1, h3, h4 {
+            color: #ffc107; /* Gold color for headings */
+        }
+        p {
+            color: #f8f9fa; /* Light text color */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand"><img src="logo1.jpg" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="btn btn-warning text-dark fw-bold" href="order.html">Order Online Now</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h1>Welcome to Vander</h1>
+            <p>At Vander, we believe that dining is not just about food; it's an experience to be savored.</p>
+            <h3>Join Us</h3>
+            <p>Whether you're celebrating a special occasion or simply enjoying a night out, [Restaurant Name] is the perfect destination.</p>
+        </div>
+        <div class="history">
+            <h3>History</h3>
+            <p>Vander Restaurant began as a small eatery with just a few tables and a passionate team of chefs. The founder, Chef Elena Martinez, dreamed of a place where every dish tells a story. Inspired by her grandmother's recipes, she focused on using high-quality, seasonal ingredients. As word spread about the mouthwatering flavors and inviting atmosphere, Vander quickly grew in popularity.</p>
+        </div>
+        <div class="values">
+            <h3>Values</h3>
+            <p>At the core of Vander's philosophy is a commitment to sustainability and community. The restaurant partners with local farmers and artisans, ensuring that every ingredient used is not only fresh but also supports the local economy. Vander is dedicated to reducing its carbon footprint, using eco-friendly practices in both the kitchen and dining areas.</p>
+        </div>
+        <div class="specialties">
+            <h3>Specialties</h3>
+            <p>Vander is particularly famous for its signature dish: the "Mutton Rogan Josh," served with seasonal vegetables and a rich red wine reduction. Another crowd favorite is the "Chicken Curry," which embodies the essence of comfort food with a gourmet twist. For dessert, the "Chocolate Lava Cake" is a must-try, offering a perfect ending to any meal.</p>
+        </div>
+        <div class="team">
+            <h3>Meet the Team</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="vander.jpg" alt="Chef Elena Martinez">
+                    <h4>Chef Thukten Vander Tshering</h4>
+                    <p>Founder and Head Chef</p>
+                    <p>With over 15 years of experience, Thukten’s passion for cooking shines through in every dish he creates. His leadership style is centered around mentorship and fostering a love for food among his team.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="rangdel.jpg" alt="Sous Chef Marco Ruiz">
+                    <h4>Sous Chef Choney Rangdel</h4>
+                    <p>Rangdel is known for his artistic plating and attention to detail. His background in fine dining brings a sophisticated touch to Vander’s offerings.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="ngawang.jpg" alt="Pastry Chef Lily Chen">
+                    <h4>Pastry Ngawang Pema</h4>
+                    <p>Ngawang’s desserts are not only delicious but also visually stunning. He believes that dessert should be a feast for the eyes as well as the palate.</p>
+                </div>
+            </div>
+        </div>
+        <div class="family-photo">
+            <h3>Our Family</h3>
+            <img src="group.jpg" alt="Vander Family Photo">
+        </div>
+        <div class="location">
+            <h3>Our Location</h3>
+            <p>Chukha, phuntsholing town, FC 56789</p>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.755275963878!2d89.3883223150617!3d26.85178098315716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e2a7e5b5b5b5b5%3A0x5b5b5b5b5b5b5b5!2sPhuntsholing%2C%20Bhutan!5e0!3m2!1sen!2sus!4v1610000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2023 Vander Restaurant. All rights reserved.</p>
+        <p>Follow us on 
+            <a href="#" class="text-warning">Facebook</a>, 
+            <a href="#" class="text-warning">Twitter</a>, 
+            <a href="#" class="text-warning">Instagram</a>
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

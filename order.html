@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Order Now</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f0f8ff;
+            padding-top: 80px; /* Space for the fixed navbar */
+        }
+        .btn-home, .btn-menu, .btn-contact {
+            background-color: #FF5733;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        .btn-home:hover, .btn-menu:hover, .btn-contact:hover {
+            background-color: #C70039;
+        }
+        .form-container {
+            background-color: #fff5e1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .order-item {
+            margin-bottom: 15px;
+        }
+        .order-item label {
+            font-weight: bold;
+        }
+        .order-box {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .order-box .row {
+            margin-bottom: 10px;
+        }
+        /* Style for the fixed navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: white;
+            font-size: 16px;
+        }
+        .navbar a:hover {
+            background-color: #C70039;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="ms-auto">
+                <a class="navbar-brand" href="index.html">Home</a>
+                <a class="navbar-brand" href="menu.html">Menu</a>
+                <a class="navbar-brand" href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2 class="text-center">Order Online</h2>
+        <div class="form-container">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="form-control">
+                <br>
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" class="form-control">
+                <br>
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" class="form-control">
+                <br>
+
+                <!-- Order Box -->
+                <div class="order-box">
+                    <h4>Select Your Items and Quantity</h4>
+
+                    <!-- Vegetarian Items -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="veg1">Paneer Butter Masala</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="number" id="veg1" name="veg1" class="form-control" placeholder="Number of plates" min="0" max="10">
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="veg2">Vegetable Biryani</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="number" id="veg2" name="veg2" class="form-control" placeholder="Number of plates" min="0" max="10">
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="veg3">Dal Tadka</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="number" id="veg3" name="veg3" class="form-control" placeholder="Number of plates" min="0" max="10">
+                            <br>
+                        </div>
+                    </div>
+
+                    <!-- Non-Vegetarian Items -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="non1">Chicken Curry</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="number" id="non1" name="non1" class="form-control" placeholder="Number of plates" min="0" max="10">
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="non2">Mutton Rogan Josh</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="number" id="non2" name="non2" class="form-control" placeholder="Number of plates" min="0" max="10">
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="non3">Fish Fry</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="number" id="non3" name="non3" class="form-control" placeholder="Number of plates" min="0" max="10">
+                            <br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="non1">chocolate lava cake</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="number" id="non1" name="non1" class="form-control" placeholder="Number of plates" min="0" max="10">
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit Order</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
